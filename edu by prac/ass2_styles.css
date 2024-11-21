@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f7f9fb;
+}
+
+/* Header with Gradient Background */
+header {
+    background: linear-gradient(90deg, #00274D, #005F9E);
+    color: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    width: 280px;
+    height: 90px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #e0e0e0;
+}
+
+/* Section Titles */
+h2 {
+    color: #00274D; /* Navy blue */
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    max-width: 700px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Programs Section */
+.program-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.program-card {
+    background: #f3f3f3;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program-card h3 {
+    color: #005F9E;
+}
+
+.program-card p {
+    color: #555;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: #e0f7fa;
+    border-left: 4px solid #005F9E;
+}
+
+.testimonial {
+    padding: 1rem;
+    font-style: italic;
+    color: #333;
+}
+
+.testimonial h4 {
+    text-align: right;
+    color: #005F9E;
+}
+
+/* Form and Buttons */
+label, input, select, button, textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #FF6A00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    background-color: #00274D;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Animation on Scroll */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+section.scroll-animation {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, section {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .program-list {
+        flex-direction: column;
+    }
+}

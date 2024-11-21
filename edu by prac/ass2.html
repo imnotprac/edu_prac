@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTC UNIVERSITY BY PRAC</title>
+    <link rel="stylesheet" href="ass2_styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="header-content">
+        <img src="sistc_logo.png" alt="College Logo" class="logo">
+        <h1>SISTC UNIVERSITY</h1>
+    </div>
+    <p class="header-subtitle">94-96 Foster Street, Dandenong, VIC 3175</p>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Our University</h2>
+    <p>
+        Whether you are studying for an undergraduate or postgraduate degree, an English language course or vocational training, Melbourne delivers an unforgettable student experience for more than 180,000 international students from 160 countries every year.
+        <br>
+        <br>Enjoy Melbourne’s vibrant arts, sports, food and coffee culture and its clean green spaces and top ranked universities.
+        <br>
+        <br>As Australia’s epicentre for world-class education and research, the state of Victoria also boasts regional student cities offering spectacular scenery, welcoming communities, generous post study work rights and a relaxed lifestyle.
+    </p>
+</section>
+
+<!-- Programs Section -->
+<section id="programs">
+    <h2>Our Programs</h2>
+    <div class="program-list">
+        <div class="program-card">
+            <h3>Undergraduate Programs</h3>
+            <p>Dive into an array of undergraduate courses designed to shape your future.</p>
+        </div>
+        <div class="program-card">
+            <h3>Graduate Programs</h3>
+            <p>Advance your knowledge and career with specialized graduate programs.</p>
+        </div>
+        <div class="program-card">
+            <h3>Online Courses</h3>
+            <p>Flexible and accessible courses to fit your schedule, wherever you are.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tuition Fee Calculator Section -->
+<section id="calculator">
+    <h2>Tuition Fee Calculator</h2>
+    <p>Estimate your tuition fee based on your program and credit hours.</p>
+    <form id="feeForm">
+        <label for="program">Select Program:</label>
+        <select id="program" required>
+            <option value="100">Undergraduate - $100/credit</option>
+            <option value="150">Graduate - $150/credit</option>
+        </select>
+        <label for="credits">Number of Credits:</label>
+        <input type="number" id="credits" required min="1">
+        <button type="button" onclick="calculateFee()">Calculate</button>
+    </form>
+    <p id="feeResult"></p>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+        <p>"The university's environment is truly inspiring. I've grown so much during my time here!"</p>
+        <h4>- Prachi, Information Technology Major</h4>
+    </div>
+    <div class="testimonial">
+        <p>"Amazing faculty and outstanding resources! The programs are top-notch."</p>
+        <h4>- Davinder, Business Major</h4>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="inquiry">
+    <h2>Contact Us</h2>
+    <form id="inquiryForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        <button type="button" onclick="sendInquiry()">Submit Inquiry</button>
+    </form>
+    <p id="inquiryResult"></p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 SISTC UNIVERSITY. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
